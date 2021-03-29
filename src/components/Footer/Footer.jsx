@@ -1,0 +1,76 @@
+import React from 'react';
+import {
+  ContactHeading,
+  ContactLogo,
+  ContactPara,
+  ContactText,
+  CRight,
+  FooterContainer,
+  FooterLinks,
+  FooterLinkSec,
+  FooterWrapper,
+  LinkHeading,
+  LinkItem,
+  Logo,
+  RightsSec,
+  WebLogo,
+  WName
+} from './FooterElements';
+
+const Footer = () => {
+  return (
+    <>
+      <FooterContainer>
+        <FooterWrapper>
+          <FooterLinkSec>
+            <FooterLinks>
+              <LinkHeading>Shop</LinkHeading>
+              <LinkItem>Gifts</LinkItem>
+              <LinkItem>Collections</LinkItem>
+              <LinkItem>Special Offers</LinkItem>
+            </FooterLinks>
+
+            <FooterLinks>
+              <LinkHeading>About Us</LinkHeading>
+              <LinkItem>Story</LinkItem>
+              <LinkItem>Blog</LinkItem>
+              <LinkItem>Locations</LinkItem>
+            </FooterLinks>
+          </FooterLinkSec>
+
+          <FooterLinkSec>
+            <FooterLinks>
+              <LinkHeading>Connect With Us</LinkHeading>
+              <LinkItem>Twitter</LinkItem>
+              <LinkItem>Instagram</LinkItem>
+              <LinkItem>Facebook</LinkItem>
+            </FooterLinks>
+
+            <FooterLinks>
+              <ContactHeading>
+                <ContactLogo></ContactLogo>
+                <ContactText>Contact Us</ContactText>
+              </ContactHeading>
+              <ContactPara>422, Main Street, London W74 8OJ</ContactPara>
+              <ContactPara>
+                Telephone: +44 (20) 45XX XXXX ,<br/> <p style={{textIndent: "83px"}}>+44 (20) 47XX XXXX</p>
+              </ContactPara>
+            </FooterLinks>
+          </FooterLinkSec>
+        </FooterWrapper>
+
+      </FooterContainer>
+      <RightsSec>
+          <WebLogo>
+            <Logo></Logo>
+            <WName>Choco</WName>
+          </WebLogo>
+          <CRight>
+            © 2021, All Rights Reserved
+          </CRight>
+        </RightsSec>
+    </>
+  );
+}
+
+export default Footer;
