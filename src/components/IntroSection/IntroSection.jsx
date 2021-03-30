@@ -7,7 +7,7 @@ const IntroSection = () => {
   return (
     <>
      <IntroContainer>
-        <Video src = {bgvideo} autoPlay loop/>
+        <Video src = {bgvideo} autoPlay loop muted/>
         <IntroContent>
           <Quote>
           Life is like a box of chocolates... you never know what you're gonna get.
