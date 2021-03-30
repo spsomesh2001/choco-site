@@ -13,11 +13,11 @@ import {
   ProdBgBox
 } from './prodContentElements';
 
-const ProdContent = ({heading, lightBg, data}) => {
+const ProdContent = ({id,heading, lightBg, data}) => {
   return (
     <>
       <ProductContainer lightBg={lightBg}>
-        <ProdContainHeading>{heading}</ProdContainHeading>
+        <ProdContainHeading id={id}>{heading}</ProdContainHeading>
         <Products> {
           data.map((prod) => {
             return (

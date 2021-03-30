@@ -8,8 +8,8 @@ const MainSection = () => {
     <>
       <MainContainer>
        <MainContentWrapper>
-          <ProdContent heading="Gifts" data={gifts}></ProdContent>
-          <ProdContent heading="Collections" data={collections}></ProdContent>
+          <ProdContent id="gifts" heading="Gifts" data={gifts}></ProdContent>
+          <ProdContent id="collections" heading="Collections" data={collections}></ProdContent>
        </MainContentWrapper>
       </MainContainer>
     </>
