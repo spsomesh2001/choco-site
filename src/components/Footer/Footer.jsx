@@ -16,8 +16,14 @@ import {
   WebLogo,
   WName
 } from './FooterElements';
+import { Link as SLink, animateScroll as scroll } from 'react-scroll';
 
 const Footer = () => {
+
+  const scrollToTop = () => {
+    scroll.scrollToTop()
+  };
+
   return (
     <>
       <FooterContainer>
@@ -25,8 +31,8 @@ const Footer = () => {
           <FooterLinkSec>
             <FooterLinks>
               <LinkHeading>Shop</LinkHeading>
-              <LinkItem>Gifts</LinkItem>
-              <LinkItem>Collections</LinkItem>
+              <LinkItem to="gifts" spy={true} smooth={true} offset={-90} duration={600}>Gifts</LinkItem>
+              <LinkItem to="collections" spy={true} smooth={true} offset={-90} duration={600}>Collections</LinkItem>
               <LinkItem>Special Offers</LinkItem>
             </FooterLinks>
 
@@ -61,10 +67,12 @@ const Footer = () => {
 
       </FooterContainer>
       <RightsSec>
+        <SLink onClick={scrollToTop}>
           <WebLogo>
             <Logo></Logo>
             <WName>Choco</WName>
           </WebLogo>
+        </SLink>
           <CRight>
             © 2021, All Rights Reserved
           </CRight>

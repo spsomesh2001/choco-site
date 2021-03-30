@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Cart, HeaderContainer, HeaderWrapper, ItemLink, Logo, MobileMenu, NavMenu, NavMenuItem, SiteLogo } from './HeaderElements';
 import { Button } from '../../globalStyles'
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link as SLink, animateScroll as scroll } from 'react-scroll';
 
 const Header = () => {
   const [mobilemenu, setMobilemenu] = useState(false)
@@ -28,14 +29,20 @@ const Header = () => {
   window.addEventListener('scroll', handleScrolled);
   window.addEventListener('resize', handleResize);
 
+  const scrollToTop = () => {
+    scroll.scrollToTop()
+  };
+
   return (
     <>
       <HeaderContainer scrolled={scrolled} mobilemenu={mobilemenu}>
         <HeaderWrapper>
-          <SiteLogo>
-            <Logo></Logo>
-            <h1 style={{letterSpacing: "2"}}>Choco</h1>
-          </SiteLogo>
+          <SLink onClick={scrollToTop}>
+            <SiteLogo>
+              <Logo></Logo>
+              <h1 style={{letterSpacing: "2"}}>Choco</h1>
+            </SiteLogo>
+          </SLink>
 
           <MobileMenu onClick = {handleMobile}>
             {

@@ -41,6 +41,7 @@ export const SiteLogo = styled.div`
   justify-content: space-between;
   align-items: center;
   color: #fff;
+  cursor: pointer;
 `
 
 export const Logo = styled(GiChocolateBar)`

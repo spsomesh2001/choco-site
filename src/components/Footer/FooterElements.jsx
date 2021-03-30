@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link as SLink } from 'react-scroll'
 import styled from 'styled-components'
 import { FaPhoneAlt } from 'react-icons/fa'
 import { GiChocolateBar } from 'react-icons/gi'
@@ -44,11 +44,12 @@ export const LinkHeading = styled.h2`
   font-size: 1.5rem;
 `
 
-export const LinkItem = styled(Link)`
+export const LinkItem = styled(SLink)`
   text-decoration: none;
   color: #000;
   font-size: 1.1rem;
   font-weight: bold;
+  cursor: pointer;
 
   &:hover {
     color: #843434;
@@ -99,6 +100,7 @@ export const WebLogo = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 5px;
+  cursor: pointer;
 `
 
 export const Logo = styled(GiChocolateBar)`
