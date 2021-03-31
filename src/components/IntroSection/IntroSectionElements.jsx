@@ -45,24 +45,25 @@ export const GoDown =styled.button`
   border-radius: 5px;
   border: 1.5px solid #fff;
   cursor: pointer;
-  transition: all 0.3s ease-out;
+  transition: all 0.4s ease-out;
 
   &:hover {
     background: #fff;
     color: #843434;
-    transition: all 0.3s ease-out;
+    transition: all 0.4s ease-out;
   }
 
   &:hover .sign {
     color: #843434;
     transform: rotate(90deg);
-    transition: all 0.5s ease-out;
+    transition: all 0.4s ease-out;
   }
 `
 
 export const SignWrap = styled.div`
   display: flex;
   align-items: center;
+  padding-top: 4px;
 `
 
 export const Sign = styled(FaArrowRight)`
@@ -71,4 +72,5 @@ export const Sign = styled(FaArrowRight)`
   font-size: 1.4rem;
   color: #fff;
   align-self: center;
+  transition: all 0.4s ease-out;
 `
