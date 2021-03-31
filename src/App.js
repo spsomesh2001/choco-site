@@ -4,6 +4,11 @@ import { GlobalContainer} from './globalStyles';
 import { BrowserRouter as Router } from 'react-router-dom'
 
 function App() {
+
+  window.onbeforeunload = function () {
+    window.scrollTo(0,0);
+  }
+
   return (
     <>
     <Router>
