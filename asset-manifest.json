@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/choco-site/static/js/main.c7fa06ad.chunk.js",
-    "main.js.map": "/choco-site/static/js/main.c7fa06ad.chunk.js.map",
+    "main.js": "/choco-site/static/js/main.0b416a85.chunk.js",
+    "main.js.map": "/choco-site/static/js/main.0b416a85.chunk.js.map",
     "runtime-main.js": "/choco-site/static/js/runtime-main.560ca68e.js",
     "runtime-main.js.map": "/choco-site/static/js/runtime-main.560ca68e.js.map",
     "static/js/2.6c987416.chunk.js": "/choco-site/static/js/2.6c987416.chunk.js",
@@ -18,6 +18,6 @@
   "entrypoints": [
     "static/js/runtime-main.560ca68e.js",
     "static/js/2.6c987416.chunk.js",
-    "static/js/main.c7fa06ad.chunk.js"
+    "static/js/main.0b416a85.chunk.js"
   ]
 }
