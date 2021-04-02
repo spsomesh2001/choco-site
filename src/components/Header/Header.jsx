@@ -52,16 +52,16 @@ const Header = () => {
 
           <NavMenu mobilemenu={mobilemenu} onClick={handleMobile} scrolled={scrolled}>
             <NavMenuItem>
-              <ItemLink to="gifts" spy={true} smooth={true} offset={-90} duration={600} onClick={handleMobile}>Shop</ItemLink>
+              <ItemLink to="gifts" spy={true} smooth={true} offset={-90} duration={600} onClick={mobilemenu && handleMobile}>Shop</ItemLink>
             </NavMenuItem>
             <NavMenuItem>
-              <ItemLink to="gifts" spy={true} smooth={true} offset={-90} duration={600} onClick={handleMobile}>Gifts</ItemLink>
+              <ItemLink to="gifts" spy={true} smooth={true} offset={-90} duration={600} onClick={mobilemenu && handleMobile}>Gifts</ItemLink>
             </NavMenuItem>
             <NavMenuItem>
-              <ItemLink to="collections" spy={true} smooth={true} offset={-90} duration={600} onClick={handleMobile}>Collections</ItemLink>
+              <ItemLink to="collections" spy={true} smooth={true} offset={-90} duration={600} onClick={mobilemenu && handleMobile}>Collections</ItemLink>
             </NavMenuItem>
             <NavMenuItem>
-              <ItemLink to="gifts" spy={true} smooth={true} offset={-90} duration={600} onClick={handleMobile}>
+              <ItemLink to="gifts" spy={true} smooth={true} offset={-90} duration={600} onClick={mobilemenu && handleMobile}>
                 <Cart></Cart>
               </ItemLink>
             </NavMenuItem>
