@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa'
 
 export const IntroContainer = styled.div`
   width: 100%;
-  height: 100vh;
+  height: ${({hh}) => (hh)}px;
   margin-top: -80px;
   display: flex;
   flex-direction: column;

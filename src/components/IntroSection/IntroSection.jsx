@@ -4,9 +4,10 @@ import bgvideo from "../../media/choco-video.mp4"
 import { Link as SLink } from "react-scroll"
 
 const IntroSection = () => {
+  console.log(window.innerHeight);
   return (
     <>
-     <IntroContainer>
+     <IntroContainer hh = {window.innerHeight}>
         <Video src = {bgvideo} autoPlay loop muted/>
         <IntroContent>
           <Quote>
