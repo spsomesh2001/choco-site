@@ -58,9 +58,10 @@ const Footer = () => {
                 <ContactText>Contact Us</ContactText>
               </ContactHeading>
               <ContactPara>422, Main Street, London W74 8OJ</ContactPara>
-              <ContactPara>
-                Telephone: +44 (20) 45XX XXXX ,<br/> <p style={{textIndent: "83px"}}>+44 (20) 47XX XXXX</p>
-              </ContactPara>
+              <pre>
+                Telephone: +44 (20) 45XX XXXX , <br/>
+                <p style={{textIndent : '79px'}}>+44 (20) 47XX XXXX</p>
+              </pre>
             </FooterLinks>
           </FooterLinkSec>
         </FooterWrapper>

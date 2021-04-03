@@ -19,9 +19,9 @@ const ProdContent = ({id,heading, lightBg, data}) => {
       <ProductContainer lightBg={lightBg}>
         <ProdContainHeading id={id}>{heading}</ProdContainHeading>
         <Products> {
-          data.map((prod) => {
+          data.map((prod, index) => {
             return (
-              <ProdBgBox>
+              <ProdBgBox key={index}>
                 <ProdItem>
                   <ProdImg src={prod.src} alt={prod.alt}></ProdImg>
                   <ProdInfo>

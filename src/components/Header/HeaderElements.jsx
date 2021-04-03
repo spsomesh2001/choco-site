@@ -77,7 +77,7 @@ export const NavMenu = styled.ul`
     justify-content: center;
     align-items: center;
     width: 65%;
-    height: calc(100vh - 80px);
+    height: ${({hh}) => (hh - 80)}px;
     position: absolute;
     top: 80px;
     right: ${({mobilemenu}) => ( mobilemenu ? "0" : "100%")};

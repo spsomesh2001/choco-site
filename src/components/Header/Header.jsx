@@ -7,6 +7,7 @@ import { Link as SLink, animateScroll as scroll } from 'react-scroll';
 const Header = () => {
   const [mobilemenu, setMobilemenu] = useState(false)
   const [scrolled, setScrolled] = useState(false);
+  const [hh, setHh] = useState(window.innerHeight);
 
   const handleScrolled = () => {
     if(window.scrollY <= 80) {
@@ -26,8 +27,18 @@ const Header = () => {
     handleScrolled();
   }
 
+  const heightcal = () => {
+    setHh(window.innerHeight);
+    console.log(window.innerHeight);
+  };
+
+  window.addEventListener("resize", heightcal);
+
   window.addEventListener('scroll', handleScrolled);
-  window.addEventListener('resize', handleResize);
+  window.addEventListener('resize', () => { 
+    handleResize();
+    heightcal();
+  });
 
   const scrollToTop = () => {
     scroll.scrollToTop()
@@ -50,18 +61,18 @@ const Header = () => {
             }
           </MobileMenu>
 
-          <NavMenu mobilemenu={mobilemenu} onClick={handleMobile} scrolled={scrolled}>
+          <NavMenu mobilemenu={mobilemenu} onClick={handleMobile} scrolled={scrolled} hh={hh}>
             <NavMenuItem>
-              <ItemLink to="gifts" spy={true} smooth={true} offset={-90} duration={600} onClick={mobilemenu && handleMobile}>Shop</ItemLink>
+              <ItemLink to="gifts" spy={true} smooth={true} offset={-90} duration={600} onClick={mobilemenu ? handleMobile : null}>Shop</ItemLink>
             </NavMenuItem>
             <NavMenuItem>
-              <ItemLink to="gifts" spy={true} smooth={true} offset={-90} duration={600} onClick={mobilemenu && handleMobile}>Gifts</ItemLink>
+              <ItemLink to="gifts" spy={true} smooth={true} offset={-90} duration={600} onClick={mobilemenu ? handleMobile : null}>Gifts</ItemLink>
             </NavMenuItem>
             <NavMenuItem>
-              <ItemLink to="collections" spy={true} smooth={true} offset={-90} duration={600} onClick={mobilemenu && handleMobile}>Collections</ItemLink>
+              <ItemLink to="collections" spy={true} smooth={true} offset={-90} duration={600} onClick={mobilemenu ? handleMobile : null}>Collections</ItemLink>
             </NavMenuItem>
             <NavMenuItem>
-              <ItemLink to="gifts" spy={true} smooth={true} offset={-90} duration={600} onClick={mobilemenu && handleMobile}>
+              <ItemLink to="gifts" spy={true} smooth={true} offset={-90} duration={600} onClick={mobilemenu ? handleMobile : null}>
                 <Cart></Cart>
               </ItemLink>
             </NavMenuItem>

@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { GoDown, IntroContainer, IntroContent, Quote, Sign, SignWrap, Video } from './IntroSectionElements'
 import bgvideo from "../../media/choco-video.mp4"
 import { Link as SLink } from "react-scroll"
 
 const IntroSection = () => {
-  console.log(window.innerHeight);
+  const [hh, setHh] = useState(window.innerHeight);
+
+  const heightcal = () => {
+    setHh(window.innerHeight);
+    console.log(window.innerHeight);
+  };
+
+  window.addEventListener("resize", heightcal);
+  
   return (
     <>
-     <IntroContainer hh = {window.innerHeight}>
+     <IntroContainer hh = {hh}>
         <Video src = {bgvideo} autoPlay loop muted/>
         <IntroContent>
           <Quote>
