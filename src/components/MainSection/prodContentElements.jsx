@@ -54,7 +54,8 @@ export const ProdItem = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: all 0.2s ease-out;
   background: #fff;
-  
+  cursor: pointer;
+
   &:hover {
     transform: translate(-10px,10px);
     transition: all 0.2s ease-out;
@@ -65,6 +66,7 @@ export const ProdImg = styled.img`
   width: 100%;
   height: 60%;
   object-fit: cover;
+  cursor: pointer;
   transition: all 0.2s ease-out;
 `
 
@@ -94,19 +96,19 @@ export const ProdPrice = styled.h3`
   font-size: 1.3rem;
 `
 
-export const ProdButton = styled.button`
-  padding: 5px 15px;
-  border-radius: 15px;
-  font-size: 1.15rem;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: #8f8f8f;
-  transition: all 0.3s ease-out;
+// export const ProdButton = styled.button`
+//   padding: 5px 15px;
+//   border-radius: 15px;
+//   font-size: 1.15rem;
+//   cursor: pointer;
+//   border: none;
+//   outline: none;
+//   background: #8f8f8f;
+//   transition: all 0.3s ease-out;
   
-  &:hover {
-    background: #843434;
-    color: #fff;
-    transition: all 0.3s ease-out;
-  }
-`
+//   &:hover {
+//     background: #843434;
+//     color: #fff;
+//     transition: all 0.3s ease-out;
+//   }
+// `

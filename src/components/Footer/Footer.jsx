@@ -33,23 +33,23 @@ const Footer = () => {
               <LinkHeading>Shop</LinkHeading>
               <LinkItem to="gifts" spy={true} smooth={true} offset={-90} duration={600}>Gifts</LinkItem>
               <LinkItem to="collections" spy={true} smooth={true} offset={-90} duration={600}>Collections</LinkItem>
-              <LinkItem>Special Offers</LinkItem>
+              <LinkItem to="">Special Offers</LinkItem>
             </FooterLinks>
 
             <FooterLinks>
               <LinkHeading>About Us</LinkHeading>
-              <LinkItem>Story</LinkItem>
-              <LinkItem>Blog</LinkItem>
-              <LinkItem>Locations</LinkItem>
+              <LinkItem to="">Story</LinkItem>
+              <LinkItem to="">Blog</LinkItem>
+              <LinkItem to="">Locations</LinkItem>
             </FooterLinks>
           </FooterLinkSec>
 
           <FooterLinkSec>
             <FooterLinks>
               <LinkHeading>Connect With Us</LinkHeading>
-              <LinkItem>Twitter</LinkItem>
-              <LinkItem>Instagram</LinkItem>
-              <LinkItem>Facebook</LinkItem>
+              <LinkItem to="">Twitter</LinkItem>
+              <LinkItem to="">Instagram</LinkItem>
+              <LinkItem to="">Facebook</LinkItem>
             </FooterLinks>
 
             <FooterLinks>
@@ -68,7 +68,7 @@ const Footer = () => {
 
       </FooterContainer>
       <RightsSec>
-        <SLink onClick={scrollToTop}>
+        <SLink to="" onClick={scrollToTop}>
           <WebLogo>
             <Logo></Logo>
             <WName>Choco</WName>

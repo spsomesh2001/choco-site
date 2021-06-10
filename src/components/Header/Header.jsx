@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
-import { Cart, HeaderContainer, HeaderWrapper, ItemLink, Logo, MobileMenu, NavMenu, NavMenuItem, SiteLogo } from './HeaderElements';
+import { Cart, HeaderContainer, HeaderWrapper, ItemLink, Logo, MobileMenu, NavMenu, NavMenuItem, NHomeItemLink, SiteLogo } from './HeaderElements';
 import { Button } from '../../globalStyles'
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link as SLink, animateScroll as scroll } from 'react-scroll';
+import { useHistory } from 'react-router-dom';
 
-const Header = () => {
+const Header = (props) => {
+  let history = useHistory();
   const [mobilemenu, setMobilemenu] = useState(false)
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(props.Nhome);
   const [hh, setHh] = useState(window.innerHeight);
 
   const handleScrolled = () => {
-    if(window.scrollY <= 80) {
+    if(window.scrollY < props.changeColorY) {
       setScrolled(false);
     }
     else {
@@ -29,7 +31,7 @@ const Header = () => {
 
   const heightcal = () => {
     setHh(window.innerHeight);
-    console.log(window.innerHeight);
+    // console.log(window.innerHeight);
   };
 
   window.addEventListener("resize", heightcal);
@@ -46,9 +48,9 @@ const Header = () => {
 
   return (
     <>
-      <HeaderContainer scrolled={scrolled} mobilemenu={mobilemenu}>
+      <HeaderContainer scrolled={scrolled} mobilemenu={mobilemenu} id="header">
         <HeaderWrapper>
-          <SLink onClick={scrollToTop}>
+          <SLink to="" onClick={scrollToTop}>
             <SiteLogo>
               <Logo></Logo>
               <h1 style={{letterSpacing: "2"}}>Choco</h1>
@@ -63,16 +65,37 @@ const Header = () => {
 
           <NavMenu mobilemenu={mobilemenu} onClick={handleMobile} scrolled={scrolled} hh={hh}>
             <NavMenuItem>
-              <ItemLink to="gifts" spy={true} smooth={true} offset={-90} duration={600} onClick={mobilemenu ? handleMobile : null}>Shop</ItemLink>
+              {
+                props.Nhome ? 
+                <NHomeItemLink to="/#gifts"  scroll={el => { el.scrollIntoView(true, { behaviour: "smooth" }); window.scrollBy(0, -90) }}>Shop</NHomeItemLink> :
+                <ItemLink to="gifts" spy={true} smooth={true} offset={-90} duration={600} onClick={mobilemenu ? handleMobile : null}>Shop</ItemLink>
+              }
             </NavMenuItem>
             <NavMenuItem>
-              <ItemLink to="gifts" spy={true} smooth={true} offset={-90} duration={600} onClick={mobilemenu ? handleMobile : null}>Gifts</ItemLink>
+              {
+                props.Nhome ? 
+                <NHomeItemLink to="/#gifts" scroll={el => { el.scrollIntoView(true, { behaviour: "smooth" }); window.scrollBy(0, -90) }}>Gifts</NHomeItemLink> :
+                <ItemLink to="gifts" spy={true} smooth={true} offset={-90} duration={600} onClick={mobilemenu ? handleMobile : null}>Gifts</ItemLink>
+              }
             </NavMenuItem>
             <NavMenuItem>
-              <ItemLink to="collections" spy={true} smooth={true} offset={-90} duration={600} onClick={mobilemenu ? handleMobile : null}>Collections</ItemLink>
+              {
+                props.Nhome ? 
+                <NHomeItemLink to="/#collections"  scroll={el => { el.scrollIntoView(true, { behaviour: "smooth" }); window.scrollBy(0, -90) }}>Collections</NHomeItemLink> :
+                <ItemLink to="collections" spy={true} smooth={true} offset={-90} duration={600} onClick={mobilemenu ? handleMobile : null}>Collections</ItemLink>
+              }
             </NavMenuItem>
             <NavMenuItem>
-              <ItemLink to="gifts" spy={true} smooth={true} offset={-90} duration={600} onClick={mobilemenu ? handleMobile : null}>
+            {
+                // props.Nhome ? 
+                // <NHomeItemLink to="/#gifts" scroll={el => { el.scrollIntoView(true, { behaviour: "smooth" }); window.scrollBy(0, -90) }}>
+                //   <Cart></Cart>
+                // </NHomeItemLink> :
+                // <ItemLink to="gifts" spy={true} smooth={true} offset={-90} duration={600} onClick={mobilemenu ? handleMobile : null}>
+                //   <Cart></Cart>
+                // </ItemLink>
+              }
+              <ItemLink to="/cart" onClick={() => history.push("/cart")}>
                 <Cart></Cart>
               </ItemLink>
             </NavMenuItem>

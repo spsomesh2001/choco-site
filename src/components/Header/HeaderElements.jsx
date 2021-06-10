@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { FaShoppingBasket } from 'react-icons/fa';
 import { GiChocolateBar } from 'react-icons/gi'
 import { Link as SLink } from 'react-scroll';
+import { HashLink as Link } from 'react-router-hash-link';
 
 export const HeaderContainer = styled.div`
   height: 80px;
@@ -96,6 +97,17 @@ export const NavMenuItem = styled.li`
 
 
 export const ItemLink = styled(SLink)`
+  cursor: pointer;
+  color: #fff;
+
+  &:hover {
+    color: #a9a9a9;
+    transition: all 0.4s ease-out;
+  }
+`
+
+export const NHomeItemLink = styled(Link)`
+  text-decoration: none;
   cursor: pointer;
   color: #fff;
 

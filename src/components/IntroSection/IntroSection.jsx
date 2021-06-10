@@ -8,7 +8,7 @@ const IntroSection = () => {
 
   const heightcal = () => {
     setHh(window.innerHeight);
-    console.log(window.innerHeight);
+    // console.log(window.innerHeight);
   };
 
   window.addEventListener("resize", heightcal);
@@ -22,7 +22,7 @@ const IntroSection = () => {
           Life is like a box of chocolates... you never know what you're gonna get.
           </Quote>
         </IntroContent>
-        <SLink to="gifts" spy={true} smooth={true} offset={-100} duration={600}>
+        <SLink to="gifts" spy={true} smooth={true} offset={-90} duration={600}>
           <GoDown>
             <h4>Start Shopping</h4><SignWrap><Sign className="sign"></Sign></SignWrap> 
           </GoDown>

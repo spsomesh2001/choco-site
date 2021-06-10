@@ -1,4 +1,4 @@
-import styled, {createGlobalStyle} from 'styled-components'
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalContainer = createGlobalStyle`
   * {
@@ -7,7 +7,7 @@ export const GlobalContainer = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
   }
-`
+`;
 
 export const Button = styled.button`
   color: #000;
@@ -24,4 +24,4 @@ export const Button = styled.button`
     background: #a9a9a9;
     transition: all 0.2s ease-out;
   }
-`
+`;
