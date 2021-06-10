@@ -26,7 +26,6 @@ function App() {
     <Router>
       <GlobalContainer></GlobalContainer>
       <Switch>
-        <Redirect from="/choco-site" to="/"></Redirect>
         <Route exact path="/">
           <HomePage cart={cart} setCart={setCart}></HomePage>
         </Route>
