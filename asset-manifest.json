@@ -1,23 +1,38 @@
 {
   "files": {
-    "main.js": "/choco-site/static/js/main.ff10be3b.chunk.js",
-    "main.js.map": "/choco-site/static/js/main.ff10be3b.chunk.js.map",
+    "main.js": "/choco-site/static/js/main.0893dc74.chunk.js",
+    "main.js.map": "/choco-site/static/js/main.0893dc74.chunk.js.map",
     "runtime-main.js": "/choco-site/static/js/runtime-main.560ca68e.js",
     "runtime-main.js.map": "/choco-site/static/js/runtime-main.560ca68e.js.map",
-    "static/js/2.69b3fab4.chunk.js": "/choco-site/static/js/2.69b3fab4.chunk.js",
-    "static/js/2.69b3fab4.chunk.js.map": "/choco-site/static/js/2.69b3fab4.chunk.js.map",
+    "static/css/2.af3ab7ac.chunk.css": "/choco-site/static/css/2.af3ab7ac.chunk.css",
+    "static/js/2.508f8fce.chunk.js": "/choco-site/static/js/2.508f8fce.chunk.js",
+    "static/js/2.508f8fce.chunk.js.map": "/choco-site/static/js/2.508f8fce.chunk.js.map",
     "index.html": "/choco-site/index.html",
-    "static/js/2.69b3fab4.chunk.js.LICENSE.txt": "/choco-site/static/js/2.69b3fab4.chunk.js.LICENSE.txt",
+    "static/css/2.af3ab7ac.chunk.css.map": "/choco-site/static/css/2.af3ab7ac.chunk.css.map",
+    "static/js/2.508f8fce.chunk.js.LICENSE.txt": "/choco-site/static/js/2.508f8fce.chunk.js.LICENSE.txt",
     "static/media/choco-video.1e8ac276.mp4": "/choco-site/static/media/choco-video.1e8ac276.mp4",
-    "static/media/coll-2.6e79f757.jpg": "/choco-site/static/media/coll-2.6e79f757.jpg",
-    "static/media/coll-3.5c4e6b1b.jpg": "/choco-site/static/media/coll-3.5c4e6b1b.jpg",
-    "static/media/gift-1.103a1485.jpg": "/choco-site/static/media/gift-1.103a1485.jpg",
-    "static/media/gift-2.0cb4787a.jpg": "/choco-site/static/media/gift-2.0cb4787a.jpg",
-    "static/media/gift-3.44950d49.jpg": "/choco-site/static/media/gift-3.44950d49.jpg"
+    "static/media/coll1-2.ca7a4845.jpg": "/choco-site/static/media/coll1-2.ca7a4845.jpg",
+    "static/media/coll1-3.b8f57ea0.jpg": "/choco-site/static/media/coll1-3.b8f57ea0.jpg",
+    "static/media/coll2-1.6e79f757.jpg": "/choco-site/static/media/coll2-1.6e79f757.jpg",
+    "static/media/coll2-2.ca7a4845.jpg": "/choco-site/static/media/coll2-2.ca7a4845.jpg",
+    "static/media/coll2-3.b8f57ea0.jpg": "/choco-site/static/media/coll2-3.b8f57ea0.jpg",
+    "static/media/coll3-1.5c4e6b1b.jpg": "/choco-site/static/media/coll3-1.5c4e6b1b.jpg",
+    "static/media/coll3-2.ca7a4845.jpg": "/choco-site/static/media/coll3-2.ca7a4845.jpg",
+    "static/media/coll3-3.b8f57ea0.jpg": "/choco-site/static/media/coll3-3.b8f57ea0.jpg",
+    "static/media/gift1-1.103a1485.jpg": "/choco-site/static/media/gift1-1.103a1485.jpg",
+    "static/media/gift1-2.ca7a4845.jpg": "/choco-site/static/media/gift1-2.ca7a4845.jpg",
+    "static/media/gift1-3.b8f57ea0.jpg": "/choco-site/static/media/gift1-3.b8f57ea0.jpg",
+    "static/media/gift2-1.0cb4787a.jpg": "/choco-site/static/media/gift2-1.0cb4787a.jpg",
+    "static/media/gift2-2.ca7a4845.jpg": "/choco-site/static/media/gift2-2.ca7a4845.jpg",
+    "static/media/gift2-3.b8f57ea0.jpg": "/choco-site/static/media/gift2-3.b8f57ea0.jpg",
+    "static/media/gift3-1.44950d49.jpg": "/choco-site/static/media/gift3-1.44950d49.jpg",
+    "static/media/gift3-2.ca7a4845.jpg": "/choco-site/static/media/gift3-2.ca7a4845.jpg",
+    "static/media/gift3-3.b8f57ea0.jpg": "/choco-site/static/media/gift3-3.b8f57ea0.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.560ca68e.js",
-    "static/js/2.69b3fab4.chunk.js",
-    "static/js/main.ff10be3b.chunk.js"
+    "static/css/2.af3ab7ac.chunk.css",
+    "static/js/2.508f8fce.chunk.js",
+    "static/js/main.0893dc74.chunk.js"
   ]
 }
