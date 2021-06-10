@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { GlobalContainer} from './globalStyles';
-import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { animateScroll as scroll } from 'react-scroll';
 
 import { CartPage, CheckOutPage, HomePage, ProductPage } from './pages/index'
@@ -26,7 +26,6 @@ function App() {
     <Router>
       <GlobalContainer></GlobalContainer>
       <Switch>
-        <Redirect from="/choco-site" to="/"></Redirect>
         <Route exact path="/">
           <HomePage cart={cart} setCart={setCart}></HomePage>
         </Route>
