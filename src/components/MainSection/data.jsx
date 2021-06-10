@@ -139,7 +139,7 @@ export const items = {
       alt: ["coll3-1", "coll3-2", "coll3-3", "coll3-4"],
       name: "Dark Chocolate Coll.",
       desc:
-        "An assortment of dark chocolate coated with tempered milk chocolate anf white chocolate",
+        "An assortment of dark chocolate coated with tempered milk chocolate and white chocolate",
       price: "$28.99",
     },
   },
