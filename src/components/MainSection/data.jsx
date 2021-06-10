@@ -95,53 +95,52 @@ export const items = {
     gif1: {
       src: [g11, g12, g13, g14],
       alt: ["gift1-1", "gift1-2", "gift1-3", "gift1-4"],
-      name: "Gift-1",
+      name: "Milk Choco Giftbox",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, in molestias",
-      price: "$19.99",
+        "An assortment of milk chocolate coated with unique drizzles.",
+      price: "$15.99",
     },
     gif2: {
       src: [g21, g22, g23, g24],
       alt: ["gift2-1", "gift2-2", "gift2-3", "gift2-4"],
-      name: "Gift-2",
+      name: "Fruity Truffle Box",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, in molestias",
+        "Chocolate truffles filled with fruity delight and glazed with white chocolate.",
       price: "$19.99",
     },
     gif3: {
       src: [g31, g32, g33, g34],
       alt: ["gift3-1", "gift3-2", "gift3-3", "gift3-4"],
-      name: "Gift-3",
+      name: "Godiva Gift Box",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, in molestias",
-      price: "$19.99",
+        "An assortment of chocolate filled with caramel and nuts.",
+      price: "$25.99",
     },
   },
   collections: {
     col1: {
       src: [c11, c12, c13, c14],
       alt: ["coll1-1", "coll1-2", "coll1-3", "coll1-4"],
-      name: "Coll-1",
+      name: "Galaxy Coll.",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, in molestias",
-      price: "$19.99",
-      quan: 1,
+        "An assortment of chocolate filled with nougat and mix of nuts.",
+      price: "$20.99",
     },
     col2: {
       src: [c21, c22, c23, c24],
       alt: ["coll2-1", "coll2-2", "coll2-3", "coll2-4"],
-      name: "Coll-2",
+      name: "Praline Coll.",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, in molestias",
-      price: "$19.99",
+        "An assortment of milk chocolate filled with nuts, salted carmel and coffee.",
+      price: "$24.99",
     },
     col3: {
       src: [c31, c32, c33, c34],
       alt: ["coll3-1", "coll3-2", "coll3-3", "coll3-4"],
-      name: "Coll-3",
+      name: "Dark Chocolate Coll.",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, in molestias",
-      price: "$19.99",
+        "An assortment of dark chocolate coated with tempered milk chocolate anf white chocolate",
+      price: "$28.99",
     },
   },
 };

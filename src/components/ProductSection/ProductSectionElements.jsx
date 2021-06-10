@@ -115,6 +115,7 @@ export const ProdContentSide = styled.div`
 export const ProdCategory = styled.p`
   margin: 10px 10px 0;
   color: #8a8686;
+  text-decoration: underline;
 `;
 
 export const ProdHeading = styled.h1`

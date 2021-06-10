@@ -4,7 +4,7 @@ import {
   CartButton,
   CartChangeB,
   CartQuanContainer,
-  Features,
+  // Features,
   GoToHome,
   H,
   Offers,
@@ -126,7 +126,7 @@ const ProductSection = ({ cart, setCart }) => {
           <ProdDesc>{prod.desc}</ProdDesc>
           <ProdPrice>{prod.price}</ProdPrice>
           <Offers>
-            <H style={{ color: "#243434" }}>Offers</H>
+            <H style={{ color: "#243434" }}>First Time Purchase: Discount of amount $4.99</H>
           </Offers>
           <ButtonsWrapper>
             <CartQuanContainer bg={inCart}>
@@ -174,9 +174,9 @@ const ProductSection = ({ cart, setCart }) => {
               </CartButton>
             </CartQuanContainer>
           </ButtonsWrapper>
-          <Features>
+          {/* <Features>
             <H style={{ color: "#243434" }}>Features</H>
-          </Features>
+          </Features> */}
           <GoToHome to="/">Go Home</GoToHome>
         </ProdContentSide>
       </ProdPageContainer>

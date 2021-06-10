@@ -22,7 +22,7 @@ const Checkout = ({ cart, setCart }) => {
   const history = useHistory();
 
   const deliveryCharge = 10.0;
-  const firstOff = 5.99;
+  const firstOff = 4.99;
 
   const [price, setPrice] = useState(null);
   const [tprice, setTPrice] = useState(null);
