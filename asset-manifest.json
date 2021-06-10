@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/choco-site/static/js/main.fd85f980.chunk.js",
-    "main.js.map": "/choco-site/static/js/main.fd85f980.chunk.js.map",
+    "main.js": "/choco-site/static/js/main.c905f429.chunk.js",
+    "main.js.map": "/choco-site/static/js/main.c905f429.chunk.js.map",
     "runtime-main.js": "/choco-site/static/js/runtime-main.560ca68e.js",
     "runtime-main.js.map": "/choco-site/static/js/runtime-main.560ca68e.js.map",
     "static/css/2.af3ab7ac.chunk.css": "/choco-site/static/css/2.af3ab7ac.chunk.css",
@@ -33,6 +33,6 @@
     "static/js/runtime-main.560ca68e.js",
     "static/css/2.af3ab7ac.chunk.css",
     "static/js/2.10ef4134.chunk.js",
-    "static/js/main.fd85f980.chunk.js"
+    "static/js/main.c905f429.chunk.js"
   ]
 }
